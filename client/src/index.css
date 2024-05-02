@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  *{
+      @apply m-0 p-0 box-border duration-100;
+  }
+
+  /* html{
+      @apply overflow-x-hidden;
+  } */
+
+  body {
+      @apply font-normal font-anekdevanagari text-black bg-white;
+  }
+
+  i{
+      @apply mt-0.5;
+  }
+
+
+  img{
+      @apply w-full h-full object-cover;
+  }
+
+  /* .navbar{
+      @apply z-10 sticky top-0 flex items-center gap-12 w-full px-[5vw] py-5 h-[80px] border-b border-grey bg-white;
+  } */
+
+ 
+
+  .center{
+      @apply block mx-auto;
+  }
+
+  .btn-dark{
+      @apply whitespace-nowrap bg-black text-white rounded-full py-3 px-6 text-xl capitalize hover:bg-opacity-80;
+  }
+
+  .btn-light{
+      @apply btn-dark bg-grey text-black;
+  }
+
+  .input-box{
+      @apply w-[100%] rounded-md p-4 bg-grey pl-12 border border-grey focus:bg-transparent placeholder:text-black;
+  }
+
+  input:disabled, input:disabled ~ .input-icon{
+      @apply opacity-50;
+  }
+
+  .input-icon{
+      @apply absolute left-4 top-1/2 -translate-y-1/2;
+  }
+
+  /* .link{
+      @apply  hover:text-black hover:bg-grey p-3 px-4 block opacity-75;
+  } */
+
+  .hide{
+      @apply opacity-0 pointer-events-none duration-100;
+  }
+
+  .show{
+      @apply opacity-100 pointer-events-auto;
+  }
+
+  .date-lg{
+    @apply text-gray mt-2 font-medium text-2xl;
+  }
+  .date-md{
+    @apply text-gray mt-2 font-medium text-base;
+  }
+  .date-sm{
+    @apply text-gray mt-2 font-medium text-sm;
+  }
+  .news-title-lg{
+      @apply  font-medium leading-7 line-clamp-3 sm:line-clamp-2 text-3xl;
+  }
+  .news-title-md{
+      @apply  font-medium leading-7 line-clamp-3 sm:line-clamp-2 text-2xl;
+  }
+  .news-title-sm{
+      @apply  font-medium leading-7 line-clamp-3 sm:line-clamp-2 text-base;
+  }
+
+  .news-index{
+      @apply text-4xl sm:text-3xl lg:text-5xl font-bold text-gray leading-none;
+  }
+}
+
